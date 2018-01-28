@@ -6,17 +6,27 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    
+    <link rel="stylesheet"
+href="https://fonts.googleapis.com/css?family=Lobster">
+
+<style>
+.w3-lobster {
+  font-family: 'Lobster'
+}
+</style>
+    
   </head>
 
-  <body>
+  <body class="w3-container w3-gray  class= w3-text-black">
     
-    <ul>
-      <a href="/static_pages/home">Home</a>
-      <a href="/users">Users</a>
-      <a href="/static_pages/help">Help</a>
-      <a href="/static_pages/about">About</a>
+    <ul  class="w3-bar w3-black">
+      <a href="/static_pages/home", class="w3-bar-item w3-button w3-padding-16 w3-large w3-text-white">Home</a>
+      <a href="/users", class="w3-bar-item w3-button w3-padding-16 w3-large w3-text-white">Users</a>
+      <a href="/static_pages/help", class="w3-bar-item w3-button w3-padding-16 w3-large w3-text-white">Help</a>
+      <a href="/static_pages/about", class="w3-bar-item w3-button w3-padding-16 w3-large w3-text-white">About</a>
     </ul>
     
-    <%= yield %>
+    <%= yield %> 
   </body>
 </html>
